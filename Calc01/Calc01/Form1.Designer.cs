@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+			this.labelMain = new Calc01.MyLabel();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.ToolStripMenuItemFile = new System.Windows.Forms.ToolStripMenuItem();
 			this.ToolStripMenuItemFileExit = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,8 +43,14 @@
 			this.ToolStripMenuItemHelpWeb = new System.Windows.Forms.ToolStripMenuItem();
 			this.ToolStripMenuItemHelpVersion = new System.Windows.Forms.ToolStripMenuItem();
 			this.fontDialog1 = new System.Windows.Forms.FontDialog();
-			this.labelMain = new Calc01.MyLabel();
 			this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+			this.ToolStripMenuItemSettingColor = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemSettingColorFromBack = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemSettingColorValueBack = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemSettingColorValueFore = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemSettingColorButtonBack = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemSettingColorButtonBackPressed = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemSettingColorButtonFore = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripContainer1.ContentPanel.SuspendLayout();
 			this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
 			this.toolStripContainer1.SuspendLayout();
@@ -72,6 +79,14 @@
 			// toolStripContainer1.TopToolStripPanel
 			// 
 			this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.menuStrip1);
+			// 
+			// labelMain
+			// 
+			this.labelMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.labelMain.Location = new System.Drawing.Point(12, 13);
+			this.labelMain.Name = "labelMain";
+			this.labelMain.Size = new System.Drawing.Size(260, 22);
+			this.labelMain.TabIndex = 0;
 			// 
 			// menuStrip1
 			// 
@@ -107,7 +122,8 @@
 			// 
 			this.ToolStripMenuItemSetting.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItemSettingShowMenu,
-            this.フォントToolStripMenuItem});
+            this.フォントToolStripMenuItem,
+            this.ToolStripMenuItemSettingColor});
 			this.ToolStripMenuItemSetting.Name = "ToolStripMenuItemSetting";
 			this.ToolStripMenuItemSetting.Size = new System.Drawing.Size(62, 22);
 			this.ToolStripMenuItemSetting.Text = "設定(&S)";
@@ -171,13 +187,54 @@
 			this.ToolStripMenuItemHelpVersion.Size = new System.Drawing.Size(196, 22);
 			this.ToolStripMenuItemHelpVersion.Text = "バージョン情報(&V)";
 			// 
-			// labelMain
+			// ToolStripMenuItemSettingColor
 			// 
-			this.labelMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.labelMain.Location = new System.Drawing.Point(12, 13);
-			this.labelMain.Name = "labelMain";
-			this.labelMain.Size = new System.Drawing.Size(260, 22);
-			this.labelMain.TabIndex = 0;
+			this.ToolStripMenuItemSettingColor.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemSettingColorFromBack,
+            this.ToolStripMenuItemSettingColorValueBack,
+            this.ToolStripMenuItemSettingColorValueFore,
+            this.ToolStripMenuItemSettingColorButtonBack,
+            this.ToolStripMenuItemSettingColorButtonBackPressed,
+            this.ToolStripMenuItemSettingColorButtonFore});
+			this.ToolStripMenuItemSettingColor.Name = "ToolStripMenuItemSettingColor";
+			this.ToolStripMenuItemSettingColor.Size = new System.Drawing.Size(228, 22);
+			this.ToolStripMenuItemSettingColor.Text = "色";
+			// 
+			// ToolStripMenuItemSettingColorFromBack
+			// 
+			this.ToolStripMenuItemSettingColorFromBack.Name = "ToolStripMenuItemSettingColorFromBack";
+			this.ToolStripMenuItemSettingColorFromBack.Size = new System.Drawing.Size(232, 22);
+			this.ToolStripMenuItemSettingColorFromBack.Text = "背景";
+			// 
+			// ToolStripMenuItemSettingColorValueBack
+			// 
+			this.ToolStripMenuItemSettingColorValueBack.Name = "ToolStripMenuItemSettingColorValueBack";
+			this.ToolStripMenuItemSettingColorValueBack.Size = new System.Drawing.Size(232, 22);
+			this.ToolStripMenuItemSettingColorValueBack.Text = "値の背景";
+			// 
+			// ToolStripMenuItemSettingColorValueFore
+			// 
+			this.ToolStripMenuItemSettingColorValueFore.Name = "ToolStripMenuItemSettingColorValueFore";
+			this.ToolStripMenuItemSettingColorValueFore.Size = new System.Drawing.Size(232, 22);
+			this.ToolStripMenuItemSettingColorValueFore.Text = "値の文字";
+			// 
+			// ToolStripMenuItemSettingColorButtonBack
+			// 
+			this.ToolStripMenuItemSettingColorButtonBack.Name = "ToolStripMenuItemSettingColorButtonBack";
+			this.ToolStripMenuItemSettingColorButtonBack.Size = new System.Drawing.Size(232, 22);
+			this.ToolStripMenuItemSettingColorButtonBack.Text = "ボタンの背景";
+			// 
+			// ToolStripMenuItemSettingColorButtonBackPressed
+			// 
+			this.ToolStripMenuItemSettingColorButtonBackPressed.Name = "ToolStripMenuItemSettingColorButtonBackPressed";
+			this.ToolStripMenuItemSettingColorButtonBackPressed.Size = new System.Drawing.Size(232, 22);
+			this.ToolStripMenuItemSettingColorButtonBackPressed.Text = "ボタンの背景（押された時）";
+			// 
+			// ToolStripMenuItemSettingColorButtonFore
+			// 
+			this.ToolStripMenuItemSettingColorButtonFore.Name = "ToolStripMenuItemSettingColorButtonFore";
+			this.ToolStripMenuItemSettingColorButtonFore.Size = new System.Drawing.Size(232, 22);
+			this.ToolStripMenuItemSettingColorButtonFore.Text = "ボタンの文字";
 			// 
 			// Form1
 			// 
@@ -222,6 +279,13 @@
 		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSettingFontButton;
 		private MyLabel labelMain;
 		private System.Windows.Forms.ColorDialog colorDialog1;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSettingColor;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSettingColorFromBack;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSettingColorValueBack;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSettingColorValueFore;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSettingColorButtonBack;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSettingColorButtonBackPressed;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSettingColorButtonFore;
 	}
 }
 

@@ -8,3 +8,6 @@ c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\obj\Debug\Cal
 c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\obj\Debug\Calc01.csproj.GenerateResource.Cache
 c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\obj\Debug\Calc01.exe
 c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\obj\Debug\Calc01.pdb
+C:\Users\kooka\Share_Ubuntu14.04\git\Calc01\Calc01\bin\Debug\Calc01.exe.config
+C:\Users\kooka\Share_Ubuntu14.04\git\Calc01\Calc01\obj\Debug\Calc01.exe
+C:\Users\kooka\Share_Ubuntu14.04\git\Calc01\Calc01\obj\Debug\Calc01.pdb
