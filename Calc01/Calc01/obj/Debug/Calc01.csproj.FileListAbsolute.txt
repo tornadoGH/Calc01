@@ -1,0 +1,10 @@
+c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\bin\Debug\Calc01.exe.config
+c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\bin\Debug\readme.txt
+c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\bin\Debug\Calc01.exe
+c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\bin\Debug\Calc01.pdb
+c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\obj\Debug\Calc01.csprojResolveAssemblyReference.cache
+c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\obj\Debug\Calc01.Form1.resources
+c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\obj\Debug\Calc01.Properties.Resources.resources
+c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\obj\Debug\Calc01.csproj.GenerateResource.Cache
+c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\obj\Debug\Calc01.exe
+c:\users\kooka\documents\visual studio 2015\Projects\Calc01\Calc01\obj\Debug\Calc01.pdb
